@@ -5,7 +5,7 @@ const randnum = (num1, num2) => {
   return num;
 };
 
-const gamerule = 'What is the result of the expression?'
+const gamerule = 'What is the result of the expression?';
 
 const gameData = () => {
   const num1 = randnum(1, 100);
@@ -13,7 +13,7 @@ const gameData = () => {
   const operation = randnum(1, 3);
   let quest = '';
   let answer = 0;
-  switch(operation) {
+  switch (operation) {
     case 1:
       quest = `${num1} + ${num2}`;
       answer = num1 + num2;
@@ -26,10 +26,12 @@ const gameData = () => {
       quest = `${num1} * ${num2}`;
       answer = num1 * num2;
       break;
-  };
+    default:
+      break;
+  }
   return [quest, String(answer)];
-}
+};
 
 const brainCalc = () => rees(gamerule, gameData);
 
-export default brainCalc
+export default brainCalc;
