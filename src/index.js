@@ -13,7 +13,8 @@ const rees = (gamerule, gameData) => {
     if (result === answer) {
       console.log('Correct!');
     } else {
-      return console.log(`'${result}', is wrong answer ;(. Correct answer was '${answer}'. Let's try again, ${name}!`);
+      console.log(`'${result}', is wrong answer ;(. Correct answer was '${answer}'.`);
+      return console.log(`Let's try again, ${name}!`);
     }
   }
   return console.log(`Congratulations, ${name}!`);
