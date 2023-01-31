@@ -3,8 +3,7 @@ import { rees, randnum } from '../index.js';
 const gamerule = 'Find the greatest common divisor of given numbers.';
 
 const gameData = () => {
-  const num1 = randnum(1, 100);
-  const num2 = randnum(1, 100);
+  const num1 = randnum(1, 100), num2 = randnum(1, 100);
   const quest = `${num1} ${num2}`;
   let answer = 0;
   for (let i = 1; i <= Math.min(num1, num2); i += 1) {
