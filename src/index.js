@@ -20,4 +20,9 @@ const rees = (gamerule, gameData) => {
   return console.log(`Congratulations, ${name}!`);
 };
 
-export default rees;
+const randnum = (num1, num2) => {
+  const num = Math.round(Math.random() * (num2 - num1) + num1);
+  return num;
+};
+
+export { rees, randnum };

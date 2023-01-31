@@ -1,9 +1,4 @@
-import rees from '../index.js';
-
-const randnum = (num1, num2) => {
-  const num = Math.round(Math.random() * (num2 - num1) + num1);
-  return num;
-};
+import { rees, randnum } from '../index.js';
 
 const primer = (num) => {
   if (num < 2) {
