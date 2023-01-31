@@ -6,10 +6,11 @@ const gameData = () => {
   const num1 = randnum(1, 100);
   const num2 = randnum(1, 100);
   const quest = `${num1} ${num2}`;
+  let answer = 0;
   for (let i = 1; i <= Math.min(num1, num2); i += 1) {
     if (Math.min(num1, num2) % i === 0) {
       if (Math.max(num1, num2) % i === 0) {
-        let answer = i;
+        answer = i;
       }
     }
   }
