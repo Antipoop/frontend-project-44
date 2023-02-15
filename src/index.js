@@ -25,4 +25,11 @@ const randnum = (num1, num2) => {
   return num;
 };
 
-export { rees, randnum };
+const yesOrNo = (game, length) => {
+  const number = randnum(1, length);
+  const question = `${number}`;
+  const answer = game(number) ? 'yes' : 'no';
+  return [question, String(answer)];
+};
+
+export { rees, randnum, yesOrNo };

@@ -1,4 +1,4 @@
-import { rees, randnum } from '../index.js';
+import { rees, yesOrNo } from '../index.js';
 
 const primer = (num) => {
   if (num < 2) {
@@ -14,12 +14,9 @@ const primer = (num) => {
 
 const gamerule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const gameData = () => {
-  const number = randnum(0, 25);
-  const question = `${number}`;
-  const answer = primer(number) ? 'yes' : 'no';
-  return [question, String(answer)];
-};
+const length = 25;
+
+const gameData = () => yesOrNo(primer, length);
 
 const brainPrime = () => rees(gamerule, gameData);
 
