@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "'Brain-games' is a collection of 5 console games, during each of them you need to specify 3 correct answers. If you make a mistake, the progress will be reset and you will be asked to try again.",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
