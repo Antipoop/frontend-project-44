@@ -21,7 +21,7 @@
 
 ДЕМОНСТРАЦИЯ ЗАПУСКА И ПРОЦЕССА ИГР:
 ### Brain-even:
-[![asciicast](https://asciinema.org/a/aGjwAbn8gMdO7TGtqTlDozGTf.svg)](https://asciinema.org/a/aGjwAbn8gMdO7TGtqTlDozGTf)
+[![asciicast](https://asciinema.org/a/27Du8T63aAKkiWIk6JPbmfmoj.svg)](https://asciinema.org/a/27Du8T63aAKkiWIk6JPbmfmoj)
 ### Brain-calc:
 [![asciicast](https://asciinema.org/a/DOfspStIXUKqrsW08iQs5veaK.svg)](https://asciinema.org/a/DOfspStIXUKqrsW08iQs5veaK)
 ### Brain-gcd:
