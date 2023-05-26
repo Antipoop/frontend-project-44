@@ -1,28 +1,26 @@
 import readlineSync from 'readline-sync';
-import { si, name } from './cli.js';
+import { randnum } from './utils.js';
 
 const rounds = 3;
 
-const rees = (gamerule, gameData) => {
-  si();
-  console.log(gamerule);
+const runEngine = (rules, generateRound) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
+  console.log(rules);
   for (let i = 0; i < rounds; i += 1) {
-    const [quest, answer] = gameData();
-    console.log(`Question: ${quest}`);
+    const [question, answer] = generateRound();
+    console.log(`Question: ${question}`);
     const result = readlineSync.question('Your answer: ');
     if (result === answer) {
       console.log('Correct!');
     } else {
       console.log(`'${result}', is wrong answer ;(. Correct answer was '${answer}'.`);
-      return console.log(`Let's try again, ${name}!`);
+      console.log(`Let's try again, ${name}!`);
+      return;
     }
   }
-  return console.log(`Congratulations, ${name}!`);
-};
-
-const randnum = (num1, num2) => {
-  const num = Math.round(Math.random() * (num2 - num1) + num1);
-  return num;
+  console.log(`Congratulations, ${name}!`);
 };
 
 const yesOrNo = (game, length) => {
@@ -32,4 +30,4 @@ const yesOrNo = (game, length) => {
   return [question, String(answer)];
 };
 
-export { rees, randnum, yesOrNo };
+export { runEngine, yesOrNo };

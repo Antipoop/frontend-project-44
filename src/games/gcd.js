@@ -1,4 +1,5 @@
-import { rees, randnum } from '../index.js';
+import { runEngine } from '../index.js';
+import { randnum } from '../utils.js';
 
 const gamerule = 'Find the greatest common divisor of given numbers.';
 
@@ -17,6 +18,6 @@ const gameData = () => {
   return [quest, String(answer)];
 };
 
-const brainGcd = () => rees(gamerule, gameData);
+const brainGcd = () => runEngine(gamerule, gameData);
 
 export default brainGcd;

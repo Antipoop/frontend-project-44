@@ -1,4 +1,5 @@
-import { rees, randnum } from '../index.js';
+import { runEngine } from '../index.js';
+import { randnum } from '../utils.js';
 
 const gamerule = 'What number is missing in the progression?';
 
@@ -23,6 +24,6 @@ const gameData = () => {
   return [question, String(answer)];
 };
 
-const brainProgression = () => rees(gamerule, gameData);
+const brainProgression = () => runEngine(gamerule, gameData);
 
 export default brainProgression;

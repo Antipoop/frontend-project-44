@@ -1,4 +1,5 @@
-import { rees, yesOrNo } from '../index.js';
+import { runEngine } from '../index.js';
+import { yesOrNo } from '../utils.js';
 
 const even = (num) => num % 2 === 0;
 
@@ -8,6 +9,6 @@ const length = 100;
 
 const gameData = () => yesOrNo(even, length);
 
-const brainEven = () => rees(gamerule, gameData);
+const brainEven = () => runEngine(gamerule, gameData);
 
 export default brainEven;

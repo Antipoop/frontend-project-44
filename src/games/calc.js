@@ -1,4 +1,5 @@
-import { rees, randnum } from '../index.js';
+import { runEngine } from '../index.js';
+import { randnum } from '../utils.js';
 
 const gamerule = 'What is the result of the expression?';
 
@@ -27,6 +28,6 @@ const gameData = () => {
   return [quest, String(answer)];
 };
 
-const brainCalc = () => rees(gamerule, gameData);
+const brainCalc = () => runEngine(gamerule, gameData);
 
 export default brainCalc;

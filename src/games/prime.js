@@ -1,4 +1,5 @@
-import { rees, yesOrNo } from '../index.js';
+import { runEngine } from '../index.js';
+import { yesOrNo } from '../utils.js';
 
 const primer = (num) => {
   if (num < 2) {
@@ -18,6 +19,6 @@ const length = 25;
 
 const gameData = () => yesOrNo(primer, length);
 
-const brainPrime = () => rees(gamerule, gameData);
+const brainPrime = () => runEngine(gamerule, gameData);
 
 export default brainPrime;
